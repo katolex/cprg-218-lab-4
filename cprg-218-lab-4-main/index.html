@@ -8,7 +8,12 @@
   <link rel="stylesheet" type="text/css" href="styles/fonts.css">
   <link rel="stylesheet" type="text/css" href="styles/global.css">
   <link rel="stylesheet" type="text/css" href="styles/lab_four_starter.css">
+  <link href="https://css.gg/css?=|arrow-long-down" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Sora:wght@100&display=swap" rel="stylesheet">
   <script defer src="script.js"></script>
+  <!-- Imported javascript, google fonts, down arrow icon. -->
   <title>Common Website Features</title>
 </head>
 <body>
@@ -22,22 +27,63 @@
     <img class="container-image" src="/assets/activities.webp" alt="Description of the image" >
     <div class="content-content">
         <h1 class="content-h1">Types of beach activities</h1>
-        <p> Choose the button below to see options</p>
+        <p> Click the button below for a wave of surprise!</p>
         <button id="btn-alert" onmouseover="clickme()" onmouseleave="clickhere()" onclick="buttonalert()">Click here!</button>
+        <!-- Made a button with javascript. Learnt skills from last semester -->
     </div>
   </section>
   <section class="container accordion-container">
-    <!-- Remove and add accordion HTML -->
-    <div class="remove-assignment-content">
-      <h1>Accordion</h1>
-    </div>
+    <!-- First time making an accordion. Added the little arrow icon to be beside text within the buttons. -->
+      <div class="accordion-item">
+        <button class="accordion-header">
+          History of Bondi Beach
+          <i class="gg-arrow-long-down"></i>
+        </button>
+        <div class="accordion-content">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta dolorum facere, inventore beatae at repudiandae in, asperiores cumque iste delectus temporibus distinctio esse magni provident aliquid! Quos delectus quae eligendi!</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          Future of Bondi Beach
+          <i class="gg-arrow-long-down"></i>
+        </button>
+        <div class="accordion-content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero cumque pariatur est odio possimus perspiciatis deserunt? Minima labore sed sunt tenetur. Fugiat, nostrum! Corporis ex explicabo nulla tempore sint labore.</p>
+        </div>
+      </div>
   </section>
   <section class="footer-container">
-    <!-- Remove and add footer HTML -->
-    <div class="remove-assignment-content">
-      <h1>Footer</h1>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi ad eveniet repudiandae distinctio ea quas beatae quidem minima quae deserunt illo aliquid, in reiciendis aspernatur rem. Commodi quisquam cum cupiditate?</p>
+      </div>
+      <div class="footer-section">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="https://www.google.com">Google</a></li>
+          <li><a href="http://www.instagram.com">Instagram</a></li>
+          <li><a href="https://www.tiktok.com">TikTok</a></li>
+          <!-- Social media links -->
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p1>Email: example@example.com</p1>
+      </div>
+      <div class="footer-section">
+        <h4>Location</h4>
+        <!-- Imported google maps  -->
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.7972123206823!2d-0.12775874824174624!3d51.5073509478846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cbf0ebd3835%3A0x3804bb0af70ef23b!2sBig%20Ben!5e0!3m2!1sen!2suk!4v1614678269964!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="copyright"> 
+      <!-- Link to js for updated year within copyright -->
+      <p>&copy; <span id="rights"></span> Company Name. All rights reserved.</p>
     </div>
   </section>
-  hh
 </body>
 </html>
